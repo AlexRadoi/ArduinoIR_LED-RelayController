@@ -89,7 +89,7 @@ void loop() {
     relay_state = 0;
   }
   break;
- case 0xFF30CF: // change color ON/OFF to Violet ( button 1 on the remote)
+ case 0xFF30CF: // change color  to Violet ( button 1 on the remote)
   if(color_1 == 0){
    fill_solid(leds,NUM_LEDS,CRGB::DarkViolet);
    FastLED.show();
@@ -124,7 +124,7 @@ FastLED.clear();
    color_3 = 1;
  }
  else{
-  fill_solid(leds,NUM_LEDS,CRGB(255, 185, 25));
+  fill_solid(leds,NUM_LEDS,CRGB(255, 185, 25)); // yellowish color
   FastLED.show();
   color_3 =0;
  }
@@ -133,12 +133,12 @@ FastLED.clear();
 
   case 0xFF10EF:   //button 4 on the remote, change color
     if (color_4 == 0){
-      fill_solid(leds,NUM_LEDS,CRGB(111, 150, 23));
+      fill_solid(leds,NUM_LEDS,CRGB(111, 150, 23)); //green like grass
       FastLED.show();
       color_4=1;
     }
     else{
-      fill_solid(leds,NUM_LEDS,CRGB(17, 200, 59));
+      fill_solid(leds,NUM_LEDS,CRGB(17, 200, 59)); // strong green
       FastLED.show();
       color_4=0;
     }
@@ -164,7 +164,7 @@ case 0xFF38C7: //button 5 on the remote, change color
 
       case 0xFF5AA5: //button 6 on the remote, change color
     if (color_6 == 0){
-      fill_solid(leds,NUM_LEDS,CRGB(215, 53, 2));
+      fill_solid(leds,NUM_LEDS,CRGB(215, 53, 2));// redish color
       FastLED.show();
       color_6=1;
     }
@@ -179,12 +179,12 @@ case 0xFF38C7: //button 5 on the remote, change color
 
    case 0xFF42BD: //button 7 on the remote
     if (color_7 == 0){
-      fill_solid(leds,NUM_LEDS,CRGB(75 ,14, 246));
+      fill_solid(leds,NUM_LEDS,CRGB(75 ,14, 246)); //dark blue
       FastLED.show();
       color_7=1;
     }
     else{
-      fill_solid(leds,NUM_LEDS,CRGB(246,14,75));
+      fill_solid(leds,NUM_LEDS,CRGB(246,14,75)); // pinkish color
       FastLED.show();
       color_7=0;
     }
@@ -194,12 +194,12 @@ case 0xFF38C7: //button 5 on the remote, change color
 
  case 0xFF4AB5: //button 8 on the remote, change color
     if (color_8 == 0){
-      fill_solid(leds,NUM_LEDS,CRGB(122,180,169));
+      fill_solid(leds,NUM_LEDS,CRGB(122,180,169)); // greyish
       FastLED.show();
       color_8=1;
     }
     else{
-      fill_solid(leds,NUM_LEDS,CRGB(139,35,235));
+      fill_solid(leds,NUM_LEDS,CRGB(139,35,235)); //warm purple
       FastLED.show();
       color_8=0;
     }
@@ -210,12 +210,12 @@ case 0xFF38C7: //button 5 on the remote, change color
 
 case 0xFF52AD: //button 9 on the remote, change color
     if (color_9 == 0){
-      fill_solid(leds,NUM_LEDS,CRGB(0, 252, 126));
+      fill_solid(leds,NUM_LEDS,CRGB(0, 252, 126)); //dry green
       FastLED.show();
       color_9=1;
     }
     else{
-      fill_solid(leds,NUM_LEDS,CRGB(139, 252, 0));
+      fill_solid(leds,NUM_LEDS,CRGB(139, 252, 0));//yellowish green
       FastLED.show();
       color_9=0;
     }
